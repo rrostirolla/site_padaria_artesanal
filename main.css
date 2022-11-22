@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Signika', sans-serif;
+    color: rgb(175, 33, 33);
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header, footer {
+    padding: 16px 0;
+    width: 100%;
+    background-color: rgb(175, 33, 33);
+    color: #fff;
+}
+
+h1,
+footer p {
+    color: #fff;
+}
+
+.container li {
+    display: inline;
+    list-style: none;
+    padding: 16px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+img {
+    max-width: 320px;
+    width: 100%;
+    margin-top: 32px;
+}
+
+#sobre {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    column-gap: 2%;
+    max-width: 1024px;
+	margin: 0 auto;
+}
+.sobre-nos {
+    margin: 32px 0;
+}
+
+.sobre-nos h2 {
+    margin-bottom: 22px;
+    border-bottom: 1px solid rgb(175, 33, 33);
+}
+
+.img-loja img {
+    max-width: 520px;
+    width: 100%;
+}
+
+.titulo-produto h2 {
+    border-bottom: 1px solid rgb(175, 33, 33);
+}
+
+.container-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+    max-width: 1024px;
+	margin: 0 auto;
+}
+
+.container-produtos img {
+    width: 240.62px;
+    height: 159.39px;
+}
+
+.titulo-produto h2 {
+    margin-top: 48px;
+}
+
+#produtos {
+    margin-bottom: 52px;
+}
+
+button {
+    margin-top: 8px;
+    background-color: rgb(175, 33, 33);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    #sobre {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .container-produtos {
+        display: block;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .container-produtos {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
